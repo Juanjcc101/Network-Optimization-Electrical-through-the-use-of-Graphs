@@ -1,1 +1,11 @@
 # Network Optimization Electrical through the use of Graphs
+
+This project focuses on the optimization of electrical networks using graph theory, aiming to address the challenges posed by the exponential growth in electricity demand over recent decades. The need for efficient and reliable energy supply has led to the development of various techniques for optimizing complex network operations.
+
+Graph theory emerges as a potent tool for tackling optimization challenges within electrical networks. A graph is a mathematical structure that models the interconnections between network elements, where nodes represent electrical components (such as generators, transformers, loads, etc.), and edges represent transmission lines. Utilizing graphs in electrical network optimization allows for the analysis and resolution of complex problems related to energy flow, load distribution, and loss minimization, among others. By applying graph theory algorithms and techniques, it's possible to find optimal or approximate solutions for network sizing, routing, and control issues.
+
+The project presents a problem formulation centered around minimizing construction costs for a specified electrical grid layout, which can be redefined in terms of minimizing the total length of cable used, connecting all nodes. To address this problem, the study employs algorithms for finding a minimum spanning tree (MST) in a graph, particularly Prim's and Kruskal's algorithms, implemented in Python 3.11.
+
+Prim's algorithm is a greedy approach that begins with an arbitrary node and expands outward, iteratively adding the nearest vertex not already in the tree until an MST is formed. Kruskal's algorithm, also greedy, starts by sorting the edges by weight and then adds them to the MST one by one, provided they don't create a cycle, until an MST is formed.
+
+The project applies these algorithms to networks proposed in a referenced article, obtaining MSTs for these networks and comparing the results. The findings demonstrate the effectiveness of MSTs in network optimization, offering a methodology applicable not only to electrical networks but also to telecommunications and other types of networks. The study underscores the importance of network optimization prior to construction to avoid the complexities associated with modifying existing networks.
